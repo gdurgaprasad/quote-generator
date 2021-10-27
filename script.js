@@ -26,7 +26,7 @@ async function fetchQuotes() {
         apiQuotes = await response.json();
         newQuote()
     } catch (error) {
-
+      fetchQuotes()
     }
 }
 
