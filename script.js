@@ -35,12 +35,12 @@ fetchQuotes();
 
 twitterBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    showLoader();
     tweetQuote()
 })
 
 newQuoteBtn.addEventListener('click', (event) => {
     event.preventDefault()
+    showLoader();
     fetchQuotes()
 })
 
